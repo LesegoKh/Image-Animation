@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.words {
+    margin-top: 1rem;
+    background-color:rgba(98, 186, 190, 0.856);
+    position:relative;
+    height:240px;
+    width: 400px;
+    z-index: 2000;
+    border-radius: 5px;
+   
+}
+
+.git {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background-color:rgba(42, 181, 189, 0.856);
+}
+span {
+    background: url(https://cdn1.iconfinder.com/data/icons/social-icons-33/512/bitcoin-256.png);
+    width:100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0% {
+     transform:translate(-50%, -50%);
+    opacity:1;
+    filter: hue-rotate(0);
+}
+100% {
+    transform:translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
+    opacity: 0;
+}
+}
